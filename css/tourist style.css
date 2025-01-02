@@ -1,0 +1,27 @@
+h2, h3, p, li {
+
+    text-align: center;
+
+}
+
+h2 {
+
+    display: inline-block;
+    background-color: rgba(59, 36, 21, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 97%;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+ 
+.bottom p {
+
+    text-align: left;
+
+}

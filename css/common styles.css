@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'GOST';
+    src: url('./GOST_2.30481_type_A_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ecd8b1;
+}
+
+body {
+    font-family: 'GOST', sans-serif;
+}
+
+body, html {
+    background-color: #693f26;
+}
+
+
+h2 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+h3 {
+    margin: 20px;
+    font-size: 25px;
+}
+
+p {
+    margin: 15px 20px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+li, a {
+
+    font-size: 20px;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3b2415;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-center ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-center ul li {
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
+.header-center ul li a {
+    text-decoration: none;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn, .contact-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: #693f26;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bottom {
+
+    background-color: #3b2415;
+
+}
+
+.contact-btn {
+    position: relative;
+}
+
+.contact-tooltip {
+    display: none;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3b2415;
+    color: #ecd8b1;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-btn:hover .contact-tooltip {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-center ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-center ul li {
+        margin: 10px 0;
+    }
+
+    .header-left h1 {
+        font-size: 28px;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .overlay {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h2, h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-left h1 {
+        font-size: 24px;
+    }
+
+    .overlay h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .lang-btn, .contact-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .image-container {
+        height: 50vh;
+    }
+}
